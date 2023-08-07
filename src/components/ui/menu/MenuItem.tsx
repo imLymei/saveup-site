@@ -25,7 +25,7 @@ export default function MenuItem({
 		>
 			{children}
 			{isHover && hasDescription && (
-				<div className='z-20 absolute bottom-0 translate-y-full left-1/2 -translate-x-1/2 whitespace-nowrap p-2 rounded-md bg-neutral-800 text-neutral-300 text-sm opacity-95'>
+				<div className='z-50 absolute bottom-0 translate-y-full left-1/2 -translate-x-1/2 whitespace-nowrap p-2 rounded-md bg-neutral-800 text-neutral-300 text-sm opacity-95'>
 					<div className='absolute top-0 -translate-y-full left-1/2 -translate-x-1/2 w-px h-px border-8 border-transparent border-b-neutral-800' />
 					{description}
 				</div>

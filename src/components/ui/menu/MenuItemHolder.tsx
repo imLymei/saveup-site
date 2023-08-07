@@ -10,10 +10,10 @@ export default function MenuItemHolder({
 	return (
 		<div
 			className={cn(
-				'hidden absolute left-1/2 -translate-x-1/2 w-40 gap-2 p-2 bg-white border border-black rounded-md',
+				'opacity-0 scale-y-0 group-hover/menu:opacity-100 group-hover/menu:scale-y-100 transition-all origin-top duration-200 absolute left-1/2 -translate-x-1/2 w-40 gap-2 p-2 bg-white border border-black rounded-md',
 				{
-					'group-hover/menu:grid grid-cols-2': grid,
-					'group-hover/menu:flex flex-col justify-center items-center': !grid,
+					'grid grid-cols-2': grid,
+					'flex flex-col justify-center items-center': !grid,
 				}
 			)}
 		>
