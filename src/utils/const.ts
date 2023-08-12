@@ -11,23 +11,27 @@ export const servicesData = [
 		name: 'Desenvolvimento de Software',
 		icon: TbDeviceDesktopCode,
 		description: 'Soluções personalizadas e escaláveis para transformar ideias em produtos eficientes.',
+		moveTo: 400,
 	},
 	{
 		name: 'Desenvolvimento Web',
 		icon: FiChrome,
 		description:
 			'Sites envolventes e responsivos que representam sua marca com design criativo e funcionalidades avançadas.',
+		moveTo: 400,
 	},
 	{
 		name: 'Desenvolvimento Mobile',
 		icon: FaMobileAlt,
 		description:
 			'Apps inovadores para engajamento móvel, entregando experiências intuitivas e ricas em recursos.',
+		moveTo: 400,
 	},
 	{
 		name: 'Marketing Digital e Identidade Visual',
 		icon: LiaAddressCard,
 		description:
 			'Estratégias online e identidade visual coesa para aumentar visibilidade e conexão com o público certo.',
+		moveTo: 400,
 	},
 ];

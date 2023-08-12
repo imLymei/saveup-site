@@ -7,17 +7,19 @@ import { servicesData } from '@/utils/const';
 
 export default function Menu() {
 	return (
-		<MenuHolder>
-			<RoundButton className='hover:bg-purple-500/10 transition'>
-				<p className='font-semibold'>menu</p> <GiHamburgerMenu />
-			</RoundButton>
-			<MenuItemHolder grid>
-				{servicesData.map((data, index) => (
-					<MenuItem key={`Service Menu - ${index}`} hasDescription description={data.name}>
-						{data.icon({ size: 30 })}
-					</MenuItem>
-				))}
-			</MenuItemHolder>
-		</MenuHolder>
+		<div className='z-50'>
+			<MenuHolder>
+				<RoundButton className='hover:bg-purple-500/10 transition'>
+					<p className='font-semibold'>menu</p> <GiHamburgerMenu />
+				</RoundButton>
+				<MenuItemHolder grid>
+					{servicesData.map((data, index) => (
+						<MenuItem key={`Service Menu - ${index}`} hasDescription description={data.name}>
+							{data.icon({ size: 30 })}
+						</MenuItem>
+					))}
+				</MenuItemHolder>
+			</MenuHolder>
+		</div>
 	);
 }

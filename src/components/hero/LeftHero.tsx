@@ -21,12 +21,13 @@ export default function LeftHero() {
 				</div>
 				<Menu />
 			</div>
-			<div className='w-full h-[800px] m-2 py-48 overflow-hidden border border-black rounded-3xl shadow-inner shadow-black/50'>
-				<div className='relative flex flex-col items-center gap-48' style={{ top: `-${scroll.number}px` }}>
+			<div className='w-full h-[800px] m-2 pt-48 overflow-hidden border border-black rounded-3xl shadow-inner shadow-black/50'>
+				<div className='relative flex flex-col items-center gap-96' style={{ top: `-${scroll.number}px` }}>
 					{scroll.number <= 500 && (
 						<div
 							className='fixed bottom-24 flex flex-col items-center gap-2 animate-bounce'
-							style={{ opacity: `${100 - scroll.number / 5}%` }}>
+							style={{ opacity: `${100 - scroll.number / 5}%` }}
+						>
 							<span>Ver mais</span>
 							<AiOutlineArrowDown />
 						</div>
@@ -48,7 +49,8 @@ export default function LeftHero() {
 						</div>
 						<RoundButton
 							fill
-							className='bg-green-500 hover:bg-green-600 border-green-500 hover:border-green-600 transition-colors'>
+							className='bg-green-500 hover:bg-green-600 border-green-500 hover:border-green-600 transition-colors'
+						>
 							<Link className='flex items-center justify-center gap-2' href={whatsappLink} target='_blank'>
 								WhatsApp <BsWhatsapp size={25} />
 							</Link>
@@ -59,7 +61,7 @@ export default function LeftHero() {
 						<h2 className='text-4xl font-bold'>Transformando visões em realidade</h2>
 						<p className='text-2xl'>Nossos projetos, como constelações confiáveis</p>
 					</div>
-					<div className='flex flex-col w-full -mt-64'>
+					<div className='flex flex-col w-full -mt-96'>
 						<Image
 							src={'/images/space-wave.svg'}
 							alt='space transition'
@@ -67,18 +69,83 @@ export default function LeftHero() {
 							height={1}
 							className='object-contain'
 						/>
-						<div className='flex flex-col justify-evenly items-center bg-[#3f3d56]'>
-							<h2 className='p-4 border border-white/40 rounded-xl bg-white/10 backdrop-blur-lg'>
-								Criatividade: criamos projetos que brilham como estrelas
-							</h2>
+						<div className='flex flex-col gap-80 justify-evenly items-center bg-[#3f3d56] text-center text-white'>
+							<div className='flex flex-col gap-12'>
+								<Image src={'/images/programming.svg'} alt='strs svg' width={600} height={1} />
+								<div>
+									<h2 className='text-4xl'>
+										Colocamos você como{' '}
+										<span className='bg-gradient-to-br from-purple-500 to-blue-500 bg-clip-text text-transparent'>
+											protagonista
+										</span>{' '}
+									</h2>
+									<p className='text-2xl'>
+										no <span className='text-purple-500'>desenvolvimento</span> do seu{' '}
+										<span className='text-blue-500'>software</span>
+									</p>
+								</div>
+							</div>
+							<div className='flex flex-col gap-12'>
+								<Image src={'/images/website.svg'} alt='strs svg' width={600} height={1} />
+								<div>
+									<h2 className='text-4xl'>
+										Seu site feito{' '}
+										<span className='bg-gradient-to-br from-blue-500 to-purple-500 bg-clip-text text-transparent'>
+											sob medida
+										</span>
+									</h2>
+									<p className='text-2xl'>
+										refletindo sua <span className='text-purple-500'>identidade</span> e destacando sua{' '}
+										<span className='text-blue-500'>presença na web</span>
+									</p>
+								</div>
+							</div>
+							<div className='flex flex-col gap-12'>
+								<Image src={'/images/programming.svg'} alt='strs svg' width={600} height={1} />
+								<div>
+									<h2 className='text-4xl'>
+										Colocamos você como{' '}
+										<span className='bg-gradient-to-br from-blue-500 to-purple-500 bg-clip-text text-transparent'>
+											protagonista
+										</span>{' '}
+									</h2>
+									<p className='text-2xl'>
+										no <span className='text-purple-500'>desenvolvimento</span> do seu{' '}
+										<span className='text-blue-500'>software</span>
+									</p>
+								</div>
+							</div>
+							<div className='flex flex-col gap-12'>
+								<Image src={'/images/website.svg'} alt='strs svg' width={600} height={1} />
+								<div>
+									<h2 className='text-4xl'>
+										Colocamos você como{' '}
+										<span className='bg-gradient-to-br from-purple-500 to-blue-500 bg-clip-text text-transparent'>
+											protagonista
+										</span>{' '}
+									</h2>
+									<p className='text-2xl'>
+										no <span className='text-purple-500'>desenvolvimento</span> do seu{' '}
+										<span className='text-blue-500'>software</span>
+									</p>
+								</div>
+							</div>
+							<div className='flex flex-col gap-12'>
+								<Image src={'/images/programming.svg'} alt='strs svg' width={600} height={1} />
+								<div>
+									<h2 className='text-4xl'>
+										Colocamos você como{' '}
+										<span className='bg-gradient-to-br from-purple-500 to-blue-500 bg-clip-text text-transparent'>
+											protagonista
+										</span>{' '}
+									</h2>
+									<p className='text-2xl'>
+										no <span className='text-purple-500'>desenvolvimento</span> do seu{' '}
+										<span className='text-blue-500'>software</span>
+									</p>
+								</div>
+							</div>
 						</div>
-						<Image
-							src={'/images/space-wave.svg'}
-							alt='space transition'
-							width={2000}
-							height={1}
-							className='object-contain rotate-180'
-						/>
 					</div>
 				</div>
 			</div>

@@ -15,6 +15,7 @@ export default function MenuItem({
 
 	return (
 		<div
+			onClick={() => window.scrollTo({ top: 200 })}
 			className='relative flex justify-center items-center p-2 border border-black hover:bg-purple-500/10 rounded-md cursor-pointer transition-colors'
 			onMouseEnter={() => {
 				if (hasDescription) setIsHover(true);
