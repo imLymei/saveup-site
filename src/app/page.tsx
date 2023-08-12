@@ -3,9 +3,8 @@ import Hero from '@/components/hero/Hero';
 
 export default function Home() {
 	return (
-		<main>
+		<main className='h-[500vh]'>
 			<Hero />
-			<Form />
 		</main>
 	);
 }
