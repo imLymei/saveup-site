@@ -15,7 +15,7 @@ export default function LeftHero() {
 				</div>
 				{/* <Menu /> */}
 			</div>
-			<div className='w-full h-[70vh] sm:h-[800px] m-2 pt-48 overflow-y-auto border border-black rounded-l-3xl shadow-inner shadow-black/50'>
+			<div className='w-full h-[70vh] sm:h-[800px] m-2 pt-36 md:pt-48 overflow-y-auto border border-black rounded-l-3xl shadow-inner shadow-black/50'>
 				<div className='relative flex flex-col items-center gap-96'>
 					<div className='relative flex flex-col gap-2 justify-evenly items-center'>
 						<Image priority src={'/images/favicon.png'} alt='SaveUp Logo' width={170} height={1} />
@@ -56,7 +56,7 @@ export default function LeftHero() {
 							<div className='flex flex-col gap-12'>
 								<Image priority src={'/images/programming.svg'} alt='strs svg' width={600} height={1} />
 								<div className='text-center'>
-									<h2 className='text-2xl md:text-4xl'>
+									<h2 className='font-bold text-2xl md:text-4xl'>
 										Colocamos você como{' '}
 										<span className='bg-gradient-to-br from-purple-500 to-blue-500 bg-clip-text text-transparent'>
 											protagonista
@@ -71,7 +71,7 @@ export default function LeftHero() {
 							<div className='flex flex-col gap-12'>
 								<Image priority src={'/images/website.svg'} alt='strs svg' width={600} height={1} />
 								<div className='text-center'>
-									<h2 className='text-2xl md:text-4xl'>
+									<h2 className='font-bold text-2xl md:text-4xl'>
 										Seu site feito{' '}
 										<span className='bg-gradient-to-br from-blue-500 to-purple-500 bg-clip-text text-transparent'>
 											sob medida
@@ -86,7 +86,7 @@ export default function LeftHero() {
 							<div className='flex flex-col gap-12'>
 								<Image priority src={'/images/programming.svg'} alt='strs svg' width={600} height={1} />
 								<div className='text-center'>
-									<h2 className='text-2xl md:text-4xl'>
+									<h2 className='font-bold text-2xl md:text-4xl'>
 										<span className='bg-gradient-to-br from-blue-500 to-purple-500 bg-clip-text text-transparent'>
 											Elevamos
 										</span>{' '}
@@ -97,7 +97,7 @@ export default function LeftHero() {
 							</div>
 							<div className='w-full flex flex-col justify-center items-center pb-32 gap-8 bg-gradient-radial from-purple-500 to-60%'>
 								<div className='text-center'>
-									<h2 className='text-2xl md:text-4xl'>
+									<h2 className='font-bold text-2xl md:text-4xl'>
 										Vamos{' '}
 										<span className='bg-gradient-to-br from-blue-500 to-purple-500 bg-clip-text text-transparent'>
 											criar juntos
