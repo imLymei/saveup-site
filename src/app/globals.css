@@ -7,3 +7,19 @@ body {
 	overflow-x: hidden;
 	max-width: 100vw;
 }
+
+::-webkit-scrollbar {
+	background-color: #222;
+	width: 0.2rem;
+}
+
+@media (min-width: 768px) {
+	::-webkit-scrollbar {
+		width: 0.5rem;
+	}
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #999;
+	border-radius: 2px;
+}
