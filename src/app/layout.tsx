@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en'>
-			<body className={cn('bg-black text-white min-h-screen', rubik.className)}>{children}</body>
+			<body className={cn('bg-black text-white h-screen', rubik.className)}>{children}</body>
 		</html>
 	);
 }

@@ -7,7 +7,7 @@ import { BsWhatsapp } from 'react-icons/bs';
 
 export default function LeftHero() {
 	return (
-		<div className='col-span-7 md:col-span-4 flex flex-col items-center justify-between p-4 bg-white md:rounded-3xl text-black z-20'>
+		<div className='h-full col-span-7 lg:col-span-4 flex flex-col items-center justify-between p-4 bg-white md:rounded-3xl text-black z-20'>
 			<div className='w-full flex justify-between'>
 				<div className='flex justify-center items-center gap-2'>
 					<Image priority src={'/images/favicon.png'} alt='SaveUp Logo' width={40} height={1} />
@@ -15,7 +15,7 @@ export default function LeftHero() {
 				</div>
 				{/* <Menu /> */}
 			</div>
-			<div className='w-full h-[70vh] sm:h-[800px] m-2 pt-36 md:pt-48 overflow-y-auto border border-black rounded-l-3xl shadow-inner shadow-black/50'>
+			<div className='w-full h-[70vh] m-2 pt-36 md:pt-48 overflow-y-auto border border-black rounded-l-3xl shadow-inner shadow-black/50'>
 				<div className='relative flex flex-col items-center gap-96'>
 					<div className='relative flex flex-col gap-2 justify-evenly items-center'>
 						<Image priority src={'/images/favicon.png'} alt='SaveUp Logo' width={170} height={1} />

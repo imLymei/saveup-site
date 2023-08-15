@@ -4,7 +4,7 @@ import LeftHero from '@/components/hero/LeftHero';
 
 export default function Home() {
 	return (
-		<main>
+		<main className='h-screen'>
 			<Hero />
 		</main>
 	);

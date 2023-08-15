@@ -6,7 +6,7 @@ import { servicesData } from '@/utils/const';
 
 export default function RightHero() {
 	return (
-		<div className='max-md:hidden col-span-3 flex flex-col justify-between gap-4 p-4 z-10'>
+		<div className='max-lg:hidden col-span-3 flex flex-col justify-between gap-4 p-4 z-10'>
 			<div className='flex flex-col gap-2 p-4 lg:w-3/5 border border-white/40 rounded-xl bg-white/10 backdrop-blur-lg'>
 				<p className='text-lg'>Conecte-se Conosco</p>
 				<p>Mantenha-se Atualizado nas Nossas Novidades e Venha Criar Algo Conosco!</p>
@@ -50,15 +50,15 @@ export default function RightHero() {
 					{servicesData.map((data, index) => (
 						<div
 							key={`Service - ${index}`}
-							className='flex flex-col gap-4 p-4 rounded-3xl border border-white/40 bg-white/30 backdrop-blur-md'
+							className='flex flex-col gap-2 lg:gap-4 p-2 lg:p-4 rounded-3xl border border-white/40 bg-white/30 backdrop-blur-md'
 						>
 							<div className='flex items-center gap-2 text-black'>
 								<div className={'bg-neutral-200 p-1.5 rounded-full hover:scale-110 transition-transform'}>
 									{data.icon()}
 								</div>
-								<p className='font-bold'>{data.name}</p>
+								<p className='font-bold text-sm'>{data.name}</p>
 							</div>
-							<p className='text-neutral-800'>{data.description}</p>
+							<p className='text-neutral-800 text-xs'>{data.description}</p>
 						</div>
 					))}
 				</div>
